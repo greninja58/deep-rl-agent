@@ -31,7 +31,7 @@ The agent uses a Dueling Deep Q-Network (Dueling DQN) to explore and learn optim
 ### File Structure
 
 - **`main.py`**: The main script containing the custom environment, DQN implementation, training, and testing logic.
-- **`src/main/java/org/cloudsimplus/prototype/eq.pth`**: Path to save/load the trained model.
+- **`eq.pth`**: Path to save/load the trained model.
 
 ---
 
@@ -142,17 +142,7 @@ pip install gymnasium numpy torch matplotlib scipy
 
 ---
 
-## Contributions
 
-Feel free to open issues or create pull requests for bug fixes, feature enhancements, or other suggestions.
-
----
-
-## License
-
-This project is licensed under the MIT License. See `LICENSE` for details.
-
----
 
 ## Contact
 
