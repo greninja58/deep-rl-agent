@@ -140,11 +140,5 @@ pip install gymnasium numpy torch matplotlib scipy
 3. **Integration with Cloud Platforms**:
    - Extend the environment to model real-world cloud-scaling problems based on mathematical equations.
 
----
 
-
-
-## Contact
-
-For inquiries or support, contact the repository maintainer via [email address or GitHub profile link].
 
