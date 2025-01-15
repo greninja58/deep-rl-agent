@@ -255,7 +255,7 @@ def train_dqn(env, num_episodes=500, gamma=0.7, lr=1e-3, batch_size=500, epsilon
 
     # Initialize the DQN model, target model, loss function, and optimizer
     model = DuelingDQN(state_size, action_size)
-    # model = load_model("src\main\java\org\cloudsimplus\prototype\eq.pth",state_size,action_size)
+    # model = load_model("eq.pth",state_size,action_size)
     target_model = DuelingDQN(state_size, action_size)
     target_model.load_state_dict(model.state_dict())
     target_model.eval()
@@ -344,7 +344,7 @@ def train_dqn(env, num_episodes=500, gamma=0.7, lr=1e-3, batch_size=500, epsilon
         if episode % 10 == 0:
             target_model.load_state_dict(model.state_dict())
 
-    save_model(model, "src\\main\\java\\org\\cloudsimplus\\prototype\\eq.pth")
+    save_model(model, "eq.pth")
     # wandb.save('src/main/java/org/cloudsimplus/prototype/custom_eq_model.pth')
     # wandb.watch(model, log="all")
     return rewards, losses
